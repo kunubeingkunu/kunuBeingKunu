@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rutvikmoradiya0811.github.io/rutvikmoradiya/sitemap.xml
