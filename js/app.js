@@ -392,13 +392,21 @@ function getCurrentTheme(){
 
 function loadTheme(theme){
   const root = document.querySelector(':root');
+   const logoImg = document.querySelector('.logo__image img');
+
   if(theme === "light"){
+    console.log(theme)
     themeBtn.innerHTML = `<em></em><i class="ph-bold ph-moon-stars"></i>`;
+    logoImg.src = "img/logo/logoImgLight.png"; // Dark logo
   } else {
+    console.log(theme)
     themeBtn.innerHTML = `<em></em><i class="ph-bold ph-sun"></i>`;
+     logoImg.src = "img/logo/IMG_0463-removebg-preview.png"; 
+    
   }
   root.setAttribute('color-scheme', `${theme}`);
-};
+}
+
 
 themeBtn.addEventListener('click', () => {
   let theme = getCurrentTheme();
