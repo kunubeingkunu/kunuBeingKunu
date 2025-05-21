@@ -429,15 +429,15 @@ window.addEventListener('DOMContentLoaded', () => {
 document.getElementById('contact-form').addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const formURL = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSebShsWX9Cppkhhxnwa_pAK5-5q5dXL5W0aNoYTYM7JAD30vw/formResponse';
+  const formURL = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScXM1CTyRlBbHsVKP-rWwiaB_ZkUU2eIqTaPsDWRM9XYHMCGg/formResponse';
   const formData = new URLSearchParams();
 
   // Append data to Google Form fields
-  formData.append('entry.484584433', document.getElementById('name').value); // Name
-  formData.append('entry.1281655461', document.getElementById('Company').value);     // Company
-  formData.append('emailAddress', document.getElementById('E-mail').value);   // Email
-  formData.append('entry.1342427324', document.getElementById('ph-number').value);   // Phone
-  formData.append('entry.830785677', document.getElementById('message').value);   // Message
+  formData.append('entry.1350058952', document.getElementById('name').value); // Name
+  formData.append('entry.1946749491', document.getElementById('Company').value);     // Company
+  formData.append('entry.1878207243', document.getElementById('E-mail').value);   // Email
+  formData.append('entry.2055100420', document.getElementById('ph-number').value);   // Phone
+  formData.append('entry.1986582867', document.getElementById('message').value);   // Message
 
   // Submit the data
   fetch(formURL, {
@@ -445,7 +445,7 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
     body: formData,
     mode: 'no-cors' // Required for Google Forms
   }).then(() => {
-    alert('Thank you! Your response has been submitted.');
+    alert('Thank you! Your response has been submitted. We will reach out to you in sometime.');
   }).catch((error) => {
     console.error('Error:', error);
   });
