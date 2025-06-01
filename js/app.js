@@ -446,6 +446,7 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
     mode: 'no-cors' // Required for Google Forms
   }).then(() => {
     alert('Thank you! Your response has been submitted. We will reach out to you in sometime.');
+     document.getElementById('contact-form').reset();
   }).catch((error) => {
     console.error('Error:', error);
   });
